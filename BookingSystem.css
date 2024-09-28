@@ -1,0 +1,208 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  font-family: montserrat;
+  background-color: rgb(0, 0, 0);
+  min-height: 100vh;
+}
+nav {
+  background: #1e1f21;
+  width: 100%;
+}
+label.logo {
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,
+a:hover {
+  background: #1b9bff;
+  transition: 0.5s;
+}
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover,
+  a.active {
+    background: none;
+    color: #0082e6;
+  }
+}
+
+/* Booking form */
+
+form {
+  height: 1000px;
+  width: 600px;
+  background-color: rgba(255, 255, 255, 0.13);
+  margin: auto;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  padding: 50px 35px;
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+
+h2 {
+  line-height: 42px;
+  text-align: center;
+  color: white;
+  font-weight: 1700;
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.labelForm {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  margin-top: 10px;
+}
+
+input,
+textarea,select {
+  padding: 20px 20px 20px 15px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.07);
+  border-radius: 3px;
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 300;
+  border: none;
+  margin-bottom: 30px;
+  color: white;
+}
+option{
+  color: black;
+}
+textarea{
+  height: 150px;
+}
+
+
+button {
+  width: 100%;
+  color: #080710;
+  padding: 20px;
+  font-size: 19px;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #096ab4;
+}
+
+/* Footer section */
+
+.footer {
+  padding: 100px;
+  width: 100%;
+  background: #3586ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.socialIcon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.socialIconItem,
+.menuItem {
+  list-style: none;
+}
+
+.socialIconLink {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.socialIconLink:hover {
+  transform: translateY(-10px);
+}
+
+.menuLink {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menuLink:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}

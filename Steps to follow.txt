@@ -1,0 +1,13 @@
+1.Intall the Xampp server locally on your computer from "https://www.apachefriends.org/download.html" and select you operating sytem.
+2. start the "Apppache" and "MySQL" from the Xampp server
+2. Go to the "http://localhost/phpmyadmin".
+3. Create a database here named as "petsitters".
+4. After successfull creation of database , make a table by running the queryu
+	CREATE TABLE users (
+    	id INT PRIMARY KEY AUTO_INCREMENT,
+    	name VARCHAR(255),
+    	email VARCHAR(255), 
+    	reset_timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    	reset_token VARCHAR(255) 
+); 
+5. place you PETSITTER folder in "C:\xampp\htdocs", 
